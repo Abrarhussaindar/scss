@@ -34,7 +34,7 @@ $colors: (
         @for $i from 1 through 9 {
             .hover-#{$key}-light-#{$i} {
                 &:hover {
-                    color: mix(white, $val, $i * 10);
+                    color: mix(white, $val, $i * 10%);
                 }
             }
         }
@@ -43,7 +43,7 @@ $colors: (
         @for $i from 1 through 9 {
             .hover-#{$key}-dark-#{$i} {
                 &:hover {
-                    color: mix(black, $val, $i * 10);
+                    color: mix(black, $val, $i * 10%);
                 }
             }
         }
